@@ -1,0 +1,3 @@
+########Firefox ve Chrome bookmarks larını güncelleme####################
+find /home -type d -name ".mozilla" -exec cp /etc/skel/.mozilla/firefox/AFADv13.default/places.sqlite "{}"/firefox/AFADv13.default/places.sqlite \;
+find /home -type d -name "google-chrome" -exec cp /etc/skel/.config/google-chrome/Default/Bookmarks "{}"/Default/Bookmarks \;
