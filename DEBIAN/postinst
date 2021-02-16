@@ -1,11 +1,11 @@
 #!/bin/bash
 ########Firefox ve Chrome bookmarks larını güncelleme####################
-rm -r /etc/skel/.pki
-rm -r /etc/skel/.mozilla
-rm -r /etc/skel/.config/google-chrome
+rm -rf /etc/skel/.pki
+rm -rf /etc/skel/.mozilla
+rm -rf /etc/skel/.config/google-chrome
 #find /home -type d -name ".mozilla" -exec cp /etc/skel/.mozilla/firefox/AFADv13.default/places.sqlite "{}"/firefox/AFADv13.default/places.sqlite \;
 #find /home -type d -name "google-chrome" -exec cp /etc/skel/.config/google-chrome/Default/Bookmarks "{}"/Default/Bookmarks \;
 cp -r /tmp/skel/.pki /etc/skel/
 cp -r /tmp/skel/.mozillai /etc/skel/
 cp -r /tmp/skel/.config/google-chrome /etc/skel/.config/
-rm -r /tmp/skel
+rm -rf /tmp/skel
