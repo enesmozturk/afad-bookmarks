@@ -1,5 +1,5 @@
 {
-   "checksum": "877801780ae5c47dcf6ebe5e9b15f17f",
+   "checksum": "fad75858a38ba02beb1cf3000c43a04c",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -7,23 +7,23 @@
                "date_added": "13192185141000000",
                "guid": "5ae576b0-9550-4d4c-b336-e0ba9dcd8076",
                "id": "26",
-               "name": "EBYS",
+               "name": "Afad - EBYS",
                "type": "url",
                "url": "https://ebys.afad.gov.tr/"
             }, {
                "date_added": "13193214928000000",
                "guid": "5bb39662-ed82-4dd2-b217-49b55d93e7e1",
                "id": "27",
-               "name": "e-Posta",
+               "name": "Afad - e-Posta",
                "type": "url",
                "url": "https://posta.afad.gov.tr/"
             }, {
                "date_added": "13256158635000000",
                "guid": "34f52993-f76c-4c58-98dd-caf3703b4abf",
                "id": "28",
-               "name": "Yıllık İzin",
+               "name": "Afad - Afbis / Yıllık İzin",
                "type": "url",
-               "url": "https://afbis.afad.gov.tr/pls/web/NXL_LOGIN?WB_SRV=SYSAFAD"
+               "url": "https://afbis.afad.gov.tr/"
             }, {
                "date_added": "13192185278000000",
                "guid": "b4d94608-4e98-4e68-a367-5a481a749757",
@@ -35,21 +35,28 @@
                "date_added": "13238678336000000",
                "guid": "c017fef3-3232-4dfb-8bac-3bfe84709ccf",
                "id": "30",
-               "name": "Rehber",
+               "name": "Afad - Rehber",
                "type": "url",
-               "url": "https://rehber.afad.gov.tr/"
+               "url": "https://portal.afad.gov.tr/tr/rehber"
             }, {
                "date_added": "13192185249000000",
                "guid": "37ae3745-03a3-4069-bf59-c61a370a925a",
                "id": "31",
-               "name": "AYDES",
+               "name": "Afad - Aydes Eski",
                "type": "url",
                "url": "https://aydes.afad.gov.tr/"
+            }, {
+               "date_added": "13268738919772801",
+               "guid": "60869c3c-4945-447e-87e9-b5bff092b198",
+               "id": "41",
+               "name": "Afad - Aydes Yeni",
+               "type": "url",
+               "url": "https://aydes.gov.tr/"
             }, {
                "date_added": "13256158747000000",
                "guid": "7f9bac9e-545e-4833-bc05-4f40ba19aded",
                "id": "32",
-               "name": "SisNET",
+               "name": "Afad - SisNET",
                "type": "url",
                "url": "https://sisnet.afad.gov.tr/"
             }, {
@@ -59,9 +66,58 @@
                "name": "İSAY",
                "type": "url",
                "url": "https://www.isay.gov.tr/login"
+            }, {
+               "date_added": "13268739454004691",
+               "guid": "0eab1edf-a97d-43a4-ae2e-ce7f84c5da35",
+               "id": "42",
+               "name": "Afad - Kurumsal Portal",
+               "type": "url",
+               "url": "https://portal.afad.gov.tr/tr"
+            }, {
+               "date_added": "13268739494812638",
+               "guid": "1a2b5f34-8cf8-44b0-b9ce-45dd4ebe158f",
+               "id": "43",
+               "name": "Afad - Pardus",
+               "type": "url",
+               "url": "https://portal.afad.gov.tr/pardus"
+            }, {
+               "date_added": "13268739592362287",
+               "guid": "b9ed56a3-da29-404b-a620-51951e9d107b",
+               "id": "44",
+               "name": "Afad - Parola Yönetim Sistemi",
+               "type": "url",
+               "url": "https://parola.afad.gov.tr/showLogin.cc"
+            }, {
+               "date_added": "13268750540387845",
+               "guid": "95c92fc1-0f84-48af-b674-d41d4c8cfb61",
+               "id": "46",
+               "name": "Afad - KPS",
+               "type": "url",
+               "url": "https://kps.afad.gov.tr/tr/AFADKPS.Auth/login"
+            }, {
+               "date_added": "13268750675338661",
+               "guid": "545fef02-fcec-4065-a558-8b32e2e806af",
+               "id": "47",
+               "name": "AFAD | Vatandaş E-Başvuru Yönetim Sistemi",
+               "type": "url",
+               "url": "https://ebasvuru.afad.gov.tr/#/login"
+            }, {
+               "date_added": "13268750712019142",
+               "guid": "bfdb7b06-f9b1-4803-91cb-9aa175055529",
+               "id": "48",
+               "name": "Afad - COVID-19 BİLGİ SİSTEMİ",
+               "type": "url",
+               "url": "https://evdekal.afad.gov.tr/afad-covid-fe/login.html"
+            }, {
+               "date_added": "13268750886478419",
+               "guid": "a6afd5d6-65ea-47ea-a1c2-2826c1f189f1",
+               "id": "49",
+               "name": "Afad - Perdis",
+               "type": "url",
+               "url": "https://perdis.afad.gov.tr/#/login"
             } ],
             "date_added": "13256159883102355",
-            "date_modified": "0",
+            "date_modified": "13268750886478419",
             "guid": "365cecbf-7167-4b95-bfae-2032b742683e",
             "id": "25",
             "name": "AFAD Kısayolları",
@@ -111,7 +167,7 @@
             "url": "https://www.turkiye.gov.tr/"
          } ],
          "date_added": "13192205106758897",
-         "date_modified": "13256159917762373",
+         "date_modified": "13268738919772801",
          "guid": "00000000-0000-4000-a000-000000000002",
          "id": "1",
          "name": "Yer işaretleri çubuğu",
