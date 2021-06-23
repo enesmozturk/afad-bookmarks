@@ -9,4 +9,24 @@ cp -r /tmp/skel/.pki /etc/skel/
 cp -r /tmp/skel/.mozilla /etc/skel/
 mkdir /etc/skel/.config
 cp -r /tmp/skel/.config/google-chrome /etc/skel/.config/
+#######var olan kullanıcılar icin########
+#####chrome######
+for i in `find /home/afetacil.gov.tr/*/.config/google-chrome/Default/ -type f -name "Bookmarks" 2>/dev/null` 
+do
+	file=$(echo "5e26b6b1bdebd1153c5e1e0b84601b27a8962477 $i" | sha1sum -c | grep Tamam | wc -l)
+	if [ "$file" == "1" ] ; then
+    echo "OK. = $i" 
+	cp /etc/skel/.config/google-chrome/Default/Bookmarks $i
+	fi
+done
+###############
+#####mozilla#####
+for i in `find /home/afetacil.gov.tr/*/.mozilla/firefox/AFADv13.default/ -type f -name "places.sqlite" 2>/dev/null` 
+do
+	file=$(echo "c730954c2715d6fae3151abb8a32706a024ee355 $i" | sha1sum -c | grep Tamam | wc -l)
+	if [ "$file" == "1" ] ; then
+    echo "OK. = $i" 
+	cp /etc/skel/.mozilla/firefox/AFADv13.default/places.sqlite $i
+	fi
+done
 rm -rf /tmp/skel
