@@ -7,7 +7,7 @@ rm -rf /etc/skel/.config/google-chrome
 #find /home -type d -name "google-chrome" -exec cp /etc/skel/.config/google-chrome/Default/Bookmarks "{}"/Default/Bookmarks \;
 cp -r /tmp/skel/.pki /etc/skel/
 cp -r /tmp/skel/.mozilla /etc/skel/
-mkdir /etc/skel/.config
+mkdir -p /etc/skel/.config
 cp -r /tmp/skel/.config/google-chrome /etc/skel/.config/
 #######var olan kullanıcılar icin########
 #####chrome######
