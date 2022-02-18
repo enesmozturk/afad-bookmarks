@@ -5,10 +5,10 @@ rm -rf /etc/skel/.mozilla
 rm -rf /etc/skel/.config/google-chrome
 #find /home -type d -name ".mozilla" -exec cp /etc/skel/.mozilla/firefox/AFADv13.default/places.sqlite "{}"/firefox/AFADv13.default/places.sqlite \;
 #find /home -type d -name "google-chrome" -exec cp /etc/skel/.config/google-chrome/Default/Bookmarks "{}"/Default/Bookmarks \;
-cp -r /tmp/skel/.pki /etc/skel/
-cp -r /tmp/skel/.mozilla /etc/skel/
+cp -r /opt/afad-bookmarks/skel/.pki /etc/skel/
+cp -r /opt/afad-bookmarks/skel/.mozilla /etc/skel/
 mkdir -p /etc/skel/.config
-cp -r /tmp/skel/.config/google-chrome /etc/skel/.config/
+cp -r /opt/afad-bookmarks/skel/.config/google-chrome /etc/skel/.config/
 #######var olan kullanıcılar icin########
 #####chrome######
 for i in `find /home/afetacil.gov.tr/*/.config/google-chrome/Default/ -type f -name "Bookmarks" 2>/dev/null` 
@@ -20,6 +20,7 @@ do
 	fi
 done
 ###############
+#find /home -type d -name ".pki" -exec cp /etc/skel/.pki/nssdb "{}"/ \;
 #####mozilla#####
 for i in `find /home/afetacil.gov.tr/*/.mozilla/firefox/AFADv13.default/ -type f -name "places.sqlite" 2>/dev/null` 
 do
@@ -29,4 +30,4 @@ do
 	cp /etc/skel/.mozilla/firefox/AFADv13.default/places.sqlite $i
 	fi
 done
-rm -rf /tmp/skel
+#rm -rf /opt/afad-bookmarks/skel
