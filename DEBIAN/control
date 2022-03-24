@@ -1,8 +1,0 @@
-Package: afad-desktop-tema
-Version: 21.01.21
-Installed-Size: 36
-Maintainer: Enes Mucahit OZTURK <enesmozturk@afad.gov.tr>
-Architecture: amd64
-Description: Afad Kurumsal Desktop Tema
-   xfce tema degistirme
-

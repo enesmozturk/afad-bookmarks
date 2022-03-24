@@ -20,7 +20,8 @@ do
 	fi
 done
 ###############
-#find /home -type d -name ".pki" -exec cp /etc/skel/.pki/nssdb "{}"/ \;
+find /home/*/.pki -type d -name "nssdb" -exec cp /etc/skel/.pki/nssdb/* "{}"/ \;
+find /home/*/*/.pki -type d -name "nssdb" -exec cp /etc/skel/.pki/nssdb/* "{}"/ \;
 #####mozilla#####
 for i in `find /home/afetacil.gov.tr/*/.mozilla/firefox/AFADv13.default/ -type f -name "places.sqlite" 2>/dev/null` 
 do
